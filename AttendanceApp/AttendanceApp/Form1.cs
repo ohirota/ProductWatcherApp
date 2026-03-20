@@ -6,5 +6,16 @@ namespace AttendanceApp
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)　//出勤ボタン
+        {
+            string nowTime = DateTime.Now.ToString("HH:mm");
+
+            lblStatus.Text ="出勤済 ("+ nowTime +")";
+
+            button1.Enabled = false;
+
+            MessageBox.Show("打刻完了");
+        }
     }
 }
