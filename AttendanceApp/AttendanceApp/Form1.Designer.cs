@@ -32,11 +32,13 @@
             lblStatus = new Label();
             button2 = new Button();
             lblStatusTAIKIN = new Label();
+            button3 = new Button();
+            button4 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(88, 69);
+            button1.Location = new Point(62, 73);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
@@ -48,7 +50,7 @@
             // 
             lblStatus.AutoSize = true;
             lblStatus.Font = new Font("Yu Gothic UI", 12F);
-            lblStatus.Location = new Point(480, 70);
+            lblStatus.Location = new Point(190, 70);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(72, 28);
             lblStatus.TabIndex = 1;
@@ -57,7 +59,7 @@
             // button2
             // 
             button2.Enabled = false;
-            button2.Location = new Point(88, 234);
+            button2.Location = new Point(62, 165);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 2;
@@ -69,17 +71,39 @@
             // 
             lblStatusTAIKIN.AutoSize = true;
             lblStatusTAIKIN.Font = new Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 128);
-            lblStatusTAIKIN.Location = new Point(480, 238);
+            lblStatusTAIKIN.Location = new Point(190, 165);
             lblStatusTAIKIN.Name = "lblStatusTAIKIN";
             lblStatusTAIKIN.Size = new Size(72, 28);
             lblStatusTAIKIN.TabIndex = 3;
             lblStatusTAIKIN.Text = "未退勤";
+            // 
+            // button3
+            // 
+            button3.Location = new Point(399, 73);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 29);
+            button3.TabIndex = 4;
+            button3.Text = "休憩開始";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(399, 168);
+            button4.Name = "button4";
+            button4.Size = new Size(94, 29);
+            button4.TabIndex = 5;
+            button4.Text = "休憩終了";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
+            Controls.Add(button3);
             Controls.Add(lblStatusTAIKIN);
             Controls.Add(button2);
             Controls.Add(lblStatus);
@@ -96,5 +120,7 @@
         private Label lblStatus;
         private Button button2;
         private Label lblStatusTAIKIN;
+        private Button button3;
+        private Button button4;
     }
 }
