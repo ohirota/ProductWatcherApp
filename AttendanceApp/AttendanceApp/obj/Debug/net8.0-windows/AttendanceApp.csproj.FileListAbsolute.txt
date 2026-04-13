@@ -14,3 +14,4 @@ C:\AttendanceSystem\AttendanceApp\AttendanceApp\obj\Debug\net8.0-windows\refint\
 C:\AttendanceSystem\AttendanceApp\AttendanceApp\obj\Debug\net8.0-windows\AttendanceApp.pdb
 C:\AttendanceSystem\AttendanceApp\AttendanceApp\obj\Debug\net8.0-windows\AttendanceApp.genruntimeconfig.cache
 C:\AttendanceSystem\AttendanceApp\AttendanceApp\obj\Debug\net8.0-windows\ref\AttendanceApp.dll
+C:\AttendanceSystem\AttendanceApp\AttendanceApp\obj\Debug\net8.0-windows\AttendanceApp.FormHistory.resources
