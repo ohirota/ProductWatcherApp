@@ -1,0 +1,18 @@
+﻿@model _0511.Models.Ticket
+<h1>チケット新規作成</h1>
+
+<form method="post" action ="/Ticket/Create">
+   <div>
+       <label>タイトル</label>
+       <input type ="text" name="Title"/>
+   </div> 
+   <div>
+       <label>説明</label>
+       <textarea name="Description"></textarea>
+   </div>
+   <div>
+       <button type ="submit">作成する</button>
+   </div>
+</form>
+
+<a herf="/Ticket">一覧に戻る</a>

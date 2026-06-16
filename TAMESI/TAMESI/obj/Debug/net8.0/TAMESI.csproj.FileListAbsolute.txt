@@ -1,0 +1,14 @@
+C:\AttendanceSystem\TAMESI\TAMESI\bin\Debug\net8.0\TAMESI.exe
+C:\AttendanceSystem\TAMESI\TAMESI\bin\Debug\net8.0\TAMESI.deps.json
+C:\AttendanceSystem\TAMESI\TAMESI\bin\Debug\net8.0\TAMESI.runtimeconfig.json
+C:\AttendanceSystem\TAMESI\TAMESI\bin\Debug\net8.0\TAMESI.dll
+C:\AttendanceSystem\TAMESI\TAMESI\bin\Debug\net8.0\TAMESI.pdb
+C:\AttendanceSystem\TAMESI\TAMESI\obj\Debug\net8.0\TAMESI.GeneratedMSBuildEditorConfig.editorconfig
+C:\AttendanceSystem\TAMESI\TAMESI\obj\Debug\net8.0\TAMESI.AssemblyInfoInputs.cache
+C:\AttendanceSystem\TAMESI\TAMESI\obj\Debug\net8.0\TAMESI.AssemblyInfo.cs
+C:\AttendanceSystem\TAMESI\TAMESI\obj\Debug\net8.0\TAMESI.csproj.CoreCompileInputs.cache
+C:\AttendanceSystem\TAMESI\TAMESI\obj\Debug\net8.0\TAMESI.dll
+C:\AttendanceSystem\TAMESI\TAMESI\obj\Debug\net8.0\refint\TAMESI.dll
+C:\AttendanceSystem\TAMESI\TAMESI\obj\Debug\net8.0\TAMESI.pdb
+C:\AttendanceSystem\TAMESI\TAMESI\obj\Debug\net8.0\TAMESI.genruntimeconfig.cache
+C:\AttendanceSystem\TAMESI\TAMESI\obj\Debug\net8.0\ref\TAMESI.dll
