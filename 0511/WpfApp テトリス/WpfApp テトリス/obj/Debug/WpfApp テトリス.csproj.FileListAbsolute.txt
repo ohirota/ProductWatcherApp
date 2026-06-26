@@ -1,0 +1,15 @@
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\bin\Debug\WpfApp テトリス.exe.config
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\bin\Debug\WpfApp テトリス.exe
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\bin\Debug\WpfApp テトリス.pdb
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\obj\Debug\WpfApp テトリス.csproj.AssemblyReference.cache
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\obj\Debug\MainWindow.g.cs
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\obj\Debug\App.g.cs
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\obj\Debug\WpfApp テトリス_MarkupCompile.cache
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\obj\Debug\MainWindow.baml
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\obj\Debug\WpfApp テトリス.g.resources
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\obj\Debug\WpfApp_テトリス.Properties.Resources.resources
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\obj\Debug\WpfApp テトリス.csproj.GenerateResource.cache
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\obj\Debug\WpfApp テトリス.csproj.CoreCompileInputs.cache
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\obj\Debug\WpfApp テトリス.exe
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\obj\Debug\WpfApp テトリス.pdb
+C:\AttendanceSystem\0511\WpfApp テトリス\WpfApp テトリス\obj\Debug\WpfApp テトリス.exe.config
