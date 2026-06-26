@@ -29,7 +29,7 @@
         </StackPanel>
 
             <GroupBox Grid.Row="1" Header="登録済み商品一覧" Margin="0,10,0,0">
-                <DataGrid x:Name="DgProducts" AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid x:Name="DgProducts" ItemsSource="{Binding Products}" AutoGenerateColumns="False" CanUserAddRows="False">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="商品名" Width="*" Binding="{Binding Path=ProductName}"/>
                         <DataGridTextColumn Header="価格" Width="100" Binding="{Binding Path=Price, StringFormat={}{0:N0}円}"/>

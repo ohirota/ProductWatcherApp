@@ -222,6 +222,33 @@ namespace WpfApp_テトリス
             return rotated;
         }
 
+        // 左回転メソッド追加
+        int[][] RotatePieceLeft(int[][] piece)
+        {
+            int rows = piece.Length;
+            int cols = piece[0].Length;
+            var rotated = new int[cols][];
+            for (int c = 0; c < cols; c++)
+            {
+                rotated[c] = new int[rows];
+                for (int r = 0; r < rows; r++)
+                    rotated[c][r] = piece[r][cols - 1 - c];
+            }
+            return rotated;
+        }
+
+        void RotateLeft()
+        {
+            var rotated = RotatePieceLeft(currentPiece);
+            if (IsValidPosition(rotated, currentX, currentY))
+                currentPiece = rotated;
+            else if (IsValidPosition(rotated, currentX - 1, currentY))
+            { currentPiece = rotated; currentX--; }
+            else if (IsValidPosition(rotated, currentX + 1, currentY))
+            { currentPiece = rotated; currentX++; }
+        }
+
+
         bool IsValidPosition(int[][] piece, int px, int py)
         {
             for (int r = 0; r < piece.Length; r++)
@@ -504,7 +531,8 @@ namespace WpfApp_テトリス
                 case Key.Left: MoveLeft(); break;
                 case Key.Right: MoveRight(); break;
                 case Key.Down: if (MoveDown()) score++; UpdateUI(); break;
-                case Key.Up: Rotate(); break;
+                case Key.T: Rotate(); break;
+                case Key.Y: RotateLeft(); break;
                 case Key.Space: HardDrop(); return;
             }
             Render();

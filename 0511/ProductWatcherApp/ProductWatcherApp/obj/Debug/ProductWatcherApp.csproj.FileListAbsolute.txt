@@ -13,3 +13,4 @@ C:\AttendanceSystem\0511\ProductWatcherApp\ProductWatcherApp\obj\Debug\ProductWa
 C:\AttendanceSystem\0511\ProductWatcherApp\ProductWatcherApp\obj\Debug\ProductWatcherApp.csproj.CoreCompileInputs.cache
 C:\AttendanceSystem\0511\ProductWatcherApp\ProductWatcherApp\obj\Debug\ProductWatcherApp.exe
 C:\AttendanceSystem\0511\ProductWatcherApp\ProductWatcherApp\obj\Debug\ProductWatcherApp.pdb
+C:\AttendanceSystem\0511\ProductWatcherApp\ProductWatcherApp\obj\Debug\ProductWatcherApp.exe.config
