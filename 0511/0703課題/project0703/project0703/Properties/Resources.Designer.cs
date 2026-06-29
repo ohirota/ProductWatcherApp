@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace project0703.Properties
+namespace Project0703.Properties
 {
 
 

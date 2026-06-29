@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace project0703
+namespace Project0703
 {
     /// <summary>
     /// App.xaml の相互作用ロジック

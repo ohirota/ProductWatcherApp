@@ -1,12 +1,36 @@
-﻿<Window x:Class="project0703.MainWindow"
+﻿<Window x:Class="Project0703.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:project0703"
+        xmlns:local="clr-namespace:Project0703"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="製造ライン管理" Height="400" Width="600">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <!-- フィルター用ドロップダウン　-->
+        <ComboBox Grid.Row="0"
+                  Margin="10"
+                  ItemsSource="{Binding StatusList}"
+                  SelectedItem="{Binding SelectedStatus}"/>
+
+        <!-- 一覧表示 -->
+        <DataGrid Grid.Row="1"
+                  Margin="10"
+                  ItemsSource="{Binding FilteredLines}"
+                  AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="150"/>
+                <DataGridTextColumn Header="ライン名" Binding="{Binding LineName}" Width="150"/>
+                <DataGridTextColumn Header="稼働状況" Binding="{Binding Status}" Width="150"/>
+                <DataGridTextColumn Header="担当者" Binding="{Binding Manager}" Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
     </Grid>
 </Window>
