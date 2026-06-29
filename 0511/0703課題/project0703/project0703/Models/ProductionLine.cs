@@ -16,8 +16,8 @@ namespace Project0703.Models
     }
     public enum LineStatus
     {
-        稼働中,
-        停止,
-        メンテナンス
+        稼働中かも,
+        停止説,
+        メンテナンスする
     }
 }
