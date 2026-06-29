@@ -34,4 +34,3 @@ C:\AttendanceSystem\0511\0703課題\project0703\project0703\bin\Debug\System.Run
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703.GeneratedMSBuildEditorConfig.editorconfig
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0.F7D9FF91.Up2Date
-C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703.exe.config

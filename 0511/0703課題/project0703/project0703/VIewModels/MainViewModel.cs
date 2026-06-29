@@ -11,10 +11,10 @@ namespace Project0703.ViewModels
     {
         private List<ProductionLine> _allLines = new List<ProductionLine>()
         {
-            new ProductionLine { Id = 1, LineName = "ラインA", Status = LineStatus.稼働中かも, Manager = "田中" },
-            new ProductionLine { Id = 2, LineName = "ラインB", Status = LineStatus.停止説, Manager = "佐藤" },
-            new ProductionLine { Id = 3, LineName = "ラインC", Status = LineStatus.メンテナンスする, Manager = "鈴木" },
-            new ProductionLine { Id = 4, LineName = "ラインD", Status = LineStatus.稼働中かも, Manager = "高橋" },
+            new ProductionLine { Id = 1, LineName = "ラインA", Status = LineStatus.稼働中, Manager = "田中" },
+            new ProductionLine { Id = 2, LineName = "ラインB", Status = LineStatus.停止, Manager = "佐藤" },
+            new ProductionLine { Id = 3, LineName = "ラインC", Status = LineStatus.メンテナンス, Manager = "鈴木" },
+            new ProductionLine { Id = 4, LineName = "ラインD", Status = LineStatus.稼働中, Manager = "高橋" },
         };
 
         public ObservableCollection<ProductionLine> FilteredLines { get; set; }
