@@ -12,13 +12,12 @@ namespace Project0703.Models
         public string LineName { get; set; }
         public LineStatus Status { get; set; }
         public string Manager { get; set; }
-        // コンストラクタ
-
-        public enum LineStatus
-        {
-            稼働中,
-            停止,
-            メンテナンス
-        }
+        // コンストラクタ   
+    }
+    public enum LineStatus
+    {
+        稼働中,
+        停止,
+        メンテナンス
     }
 }
