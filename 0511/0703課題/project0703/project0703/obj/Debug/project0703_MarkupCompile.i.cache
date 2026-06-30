@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\App.xaml
-2-1447062843
+3-1478627560
 
-8-57569202
+9-374048749
 26-1468963411
-MainWindow.xaml;Resources\AreaKeys.xaml;
+DetailWindow.xaml;MainWindow.xaml;Resources\AreaKeys.xaml;
 
-False
+True
 

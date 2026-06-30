@@ -25,7 +25,8 @@
                   Margin="{StaticResource DefaultMargin}"
                   FontSize="{StaticResource DefaultFontSize}"
                   ItemsSource="{Binding FilteredLines}"
-                  AutoGenerateColumns="False">
+                  AutoGenerateColumns="False"
+                  MouseDoubleClick="DataGrid_MouseDoubleClick">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="150"/>
                 <DataGridTextColumn Header="ライン名" Binding="{Binding LineName}" Width="150"/>

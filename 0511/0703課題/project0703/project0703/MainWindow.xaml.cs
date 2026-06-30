@@ -1,18 +1,8 @@
-﻿using Project0703.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using Project0703.Models;
+using Project0703.ViewModels;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Project0703
 {
@@ -25,6 +15,15 @@ namespace Project0703
         {
             InitializeComponent();
             DataContext = new MainViewModel();
+        }
+
+        private void DataGrid_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            if (sender is DataGrid grid && grid.SelectedItem is ProductionLine selectedLine)
+            {
+                var detailWindow = new DetailWindow(selectedLine);
+                detailWindow.ShowDialog();
+            }
         }
     }
 }
