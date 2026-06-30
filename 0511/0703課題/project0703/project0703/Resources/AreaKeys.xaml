@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <!--マージンの定義-->
+
+    <Thickness x:Key="SmallMargin">5</Thickness>
+    <Thickness x:Key="DefaultMargin">10</Thickness>
+    <Thickness x:Key="LargeMargin">20</Thickness>
+
+    <!--<色の定義>-->
+
+    <SolidColorBrush x:Key="PrimaryColor" Color="SteelBlue" />
+    <SolidColorBrush x:Key="ActiveColor" Color="Green" />
+    <SolidColorBrush x:Key="StopColor" Color="Red" />
+    <SolidColorBrush x:Key="MaintenanceColor" Color="Orange" />
+    
+    <!--フォントサイズの定義-->
+
+    <System:Double x:Key="DefaultFontSize" xmlns:System="clr-namespace:System;assembly=mscorlib">14</System:Double>
+
+
+</ResourceDictionary>

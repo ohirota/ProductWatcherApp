@@ -12,16 +12,18 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        
 
         <!-- フィルター用ドロップダウン　-->
         <ComboBox Grid.Row="0"
-                  Margin="10"
+                  Margin="{StaticResource DefaultMargin}"
                   ItemsSource="{Binding StatusList}"
                   SelectedItem="{Binding SelectedStatus}"/>
 
         <!-- 一覧表示 -->
         <DataGrid Grid.Row="1"
-                  Margin="10"
+                  Margin="{StaticResource DefaultMargin}"
+                  FontSize="{StaticResource DefaultFontSize}"
                   ItemsSource="{Binding FilteredLines}"
                   AutoGenerateColumns="False">
             <DataGrid.Columns>
@@ -30,7 +32,25 @@
                 <DataGridTextColumn Header="稼働状況" Binding="{Binding Status}" Width="150"/>
                 <DataGridTextColumn Header="担当者" Binding="{Binding Manager}" Width="150"/>
             </DataGrid.Columns>
+
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Status}" Value="稼働中">
+                            <Setter Property="Background" Value="{StaticResource ActiveColor}"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="停止">
+                            <Setter Property="Background" Value="{StaticResource StopColor}"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="メンテナンス">
+                            <Setter Property="Background" Value="{StaticResource MaintenanceColor}"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
         </DataGrid>
+        
+        
 
     </Grid>
 </Window>
