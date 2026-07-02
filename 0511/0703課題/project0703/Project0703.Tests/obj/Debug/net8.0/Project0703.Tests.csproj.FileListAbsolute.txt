@@ -1,3 +1,9 @@
+C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.csproj.AssemblyReference.cache
+C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.AssemblyInfoInputs.cache
+C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.AssemblyInfo.cs
+C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.csproj.CoreCompileInputs.cache
+C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.sourcelink.json
 C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\bin\Debug\net8.0\testhost.dll
 C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\bin\Debug\net8.0\testhost.exe
 C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
@@ -93,12 +99,6 @@ C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\bin\Debug\net8
 C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\bin\Debug\net8.0\project0703.exe.config
 C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\bin\Debug\net8.0\CommunityToolkit.Mvvm.xml
 C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.xml
-C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.csproj.AssemblyReference.cache
-C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.AssemblyInfoInputs.cache
-C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.AssemblyInfo.cs
-C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.csproj.CoreCompileInputs.cache
-C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.sourcelink.json
 C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0.DE7F1645.Up2Date
 C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\Project0703.Tests.dll
 C:\AttendanceSystem\0511\0703課題\project0703\Project0703.Tests\obj\Debug\net8.0\refint\Project0703.Tests.dll
