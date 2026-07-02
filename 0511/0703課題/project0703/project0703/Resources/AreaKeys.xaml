@@ -20,4 +20,11 @@
     <System:Double x:Key="DefaultFontSize" xmlns:System="clr-namespace:System;assembly=mscorlib">14</System:Double>
 
 
+    <Style x:Key="DataGridHeaderStyle" TargetType="DataGridColumnHeader">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Background" Value="{StaticResource PrimaryColor}"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+
+
 </ResourceDictionary>

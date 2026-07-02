@@ -32,6 +32,7 @@
 
         <!-- 一覧表示 -->
         <DataGrid Grid.Row="2"
+                  ColumnHeaderStyle="{StaticResource DataGridHeaderStyle}"
                   Margin="{StaticResource DefaultMargin}"
                   FontSize="{StaticResource DefaultFontSize}"
                   ItemsSource="{Binding FilteredLines}"
