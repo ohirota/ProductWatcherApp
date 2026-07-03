@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Shapes;
 
 namespace Project0703.ViewModels
 {
@@ -47,6 +48,13 @@ namespace Project0703.ViewModels
             {
                 FilteredLines.Add(line);
             }
+        }
+
+        public void AddLine(ProductionLine line)
+        {
+            _allLines.Add(line);
+            FilteredLines.Add(line);
+
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using Project0703.Models;
 
 namespace Project0703
@@ -12,6 +13,12 @@ namespace Project0703
         {
             InitializeComponent();
             DataContext = line;
+            StatusComboBox.ItemsSource = Enum.GetValues(typeof(LineStatus));
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = true;
         }
     }
 }

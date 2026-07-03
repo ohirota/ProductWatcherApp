@@ -14,11 +14,17 @@
         <TextBlock Text="ライン名" FontWeight="Bold"/>
         <TextBlock Text="{Binding LineName}" Margin="0,0,0,10"/>
 
-        <TextBlock Text="稼働状況" FontWeight="Bold"/>
-        <TextBlock Text="{Binding Status}" Margin="0,0,0,10"/>
+        <!--<TextBlock Text="稼働状況" FontWeight="Bold"/>
+        <ComboBox Text="{Binding Status}" Margin="0,0,0,10"/>-->
+
+        <ComboBox x:Name="StatusComboBox" SelectedItem="{Binding Status}" Margin="0,0,0,10"/>
 
         <TextBlock Text="担当者" FontWeight="Bold"/>
         <TextBlock Text="{Binding Manager}" Margin="0,0,0,10"/>
+
+        <Button Content="保存" Click="SaveButton_Click"
+                Style="{StaticResource PrimaryButton}"/>
+
     </StackPanel>
 
 </Window>

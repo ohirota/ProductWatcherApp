@@ -33,7 +33,7 @@ namespace Project0703
             if (addWindow.ShowDialog() == true)
             {
                 addWindow.NewLine.Id = viewModel.FilteredLines.Count + 1;
-                viewModel.FilteredLines.Add(addWindow.NewLine);
+                viewModel.AddLine(addWindow.NewLine);
             }
         }
         private void ResetButton_Click(object sender, RoutedEventArgs e)
