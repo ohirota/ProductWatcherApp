@@ -25,5 +25,25 @@ namespace Project0703
                 detailWindow.ShowDialog();
             }
         }
+        private void AddLineButton_Click(object sender, RoutedEventArgs e)
+        {
+            var viewModel = DataContext as MainViewModel;
+            var addWindow = new AddLineWindow(viewModel.StatusList);
+
+            if (addWindow.ShowDialog() == true)
+            {
+                addWindow.NewLine.Id = viewModel.FilteredLines.Count + 1;
+                viewModel.FilteredLines.Add(addWindow.NewLine);
+            }
+        }
+        private void ResetButton_Click(object sender, RoutedEventArgs e)
+        {
+            var viewModel = DataContext as MainViewModel;
+            if (viewModel != null)
+            {
+                viewModel.SelectedStatus = null;
+            }
+        }
+
     }
 }

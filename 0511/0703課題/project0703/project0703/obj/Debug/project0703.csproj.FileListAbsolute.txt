@@ -1,3 +1,11 @@
+C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703.csproj.AssemblyReference.cache
+C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\Resources\AreaKeys.baml
+C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\AddLineWindow.g.cs
+C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\DetailWindow.g.cs
+C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\MainWindow.g.cs
+C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\App.g.cs
+C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703_MarkupCompile.cache
+C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703_MarkupCompile.lref
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\bin\Debug\project0703.exe.config
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\bin\Debug\project0703.exe
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\bin\Debug\project0703.pdb
@@ -20,13 +28,9 @@ C:\AttendanceSystem\0511\0703課題\project0703\project0703\bin\Debug\System.Mem
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\bin\Debug\System.Numerics.Vectors.xml
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703.csproj.AssemblyReference.cache
-C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\Resources\AreaKeys.baml
-C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\MainWindow.g.cs
-C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\App.g.cs
-C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703_MarkupCompile.cache
-C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703_MarkupCompile.lref
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\App.baml
+C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\AddLineWindow.baml
+C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\DetailWindow.baml
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\MainWindow.baml
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703.g.resources
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703.Properties.Resources.resources
@@ -37,5 +41,3 @@ C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0.F
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703.exe
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703.pdb
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703.exe.config
-C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\DetailWindow.g.cs
-C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\DetailWindow.baml

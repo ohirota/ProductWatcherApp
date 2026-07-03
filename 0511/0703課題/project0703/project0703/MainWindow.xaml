@@ -15,16 +15,26 @@
 
         <!-- ヘッダー -->
         <Border Grid.Row="0"
-                Background="{StaticResource PrimaryColor}"
-                Padding="{StaticResource DefaultMargin}">
-            <TextBlock Text="製造ライン管理システム"
-                       Foreground="White"
-                       FontSize="{StaticResource DefaultFontSize}"
-                       FontWeight="Bold"/>
-            </Border>
+        Background="{StaticResource PrimaryColor}"
+        Padding="{StaticResource DefaultMargin}">
+            <DockPanel LastChildFill="False">
+                <TextBlock Text="製造ライン管理システム"
+                   Foreground="White"
+                   FontSize="{StaticResource DefaultFontSize}"
+                   FontWeight="Bold"
+                   VerticalAlignment="Center"/>
+                <Button DockPanel.Dock="Right"
+                Style="{StaticResource PrimaryButton}"
+                Click="ResetButton_Click">全件表示</Button>
+                <Button DockPanel.Dock="Right"
+                Style="{StaticResource PrimaryButton}"
+                Margin="0,0,5,0"
+                Click="AddLineButton_Click">ライン追加</Button>
+            </DockPanel>
+        </Border>
 
 
-                <!-- フィルター用ドロップダウン　-->
+        <!-- フィルター用ドロップダウン　-->
         <ComboBox Grid.Row="1"
                   Margin="{StaticResource DefaultMargin}"
                   ItemsSource="{Binding StatusList}"
@@ -32,6 +42,7 @@
 
         <!-- 一覧表示 -->
         <DataGrid Grid.Row="2"
+                  ColumnHeaderStyle="{StaticResource DataGridHeaderStyle}"
                   Margin="{StaticResource DefaultMargin}"
                   FontSize="{StaticResource DefaultFontSize}"
                   ItemsSource="{Binding FilteredLines}"
@@ -60,8 +71,8 @@
                 </Style>
             </DataGrid.RowStyle>
         </DataGrid>
-        
-        
+
+
 
     </Grid>
 </Window>

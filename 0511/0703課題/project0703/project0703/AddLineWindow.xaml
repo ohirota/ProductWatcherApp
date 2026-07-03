@@ -1,0 +1,23 @@
+﻿<Window x:Class="Project0703.AddLineWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project0703"
+        mc:Ignorable="d"
+        Title="ライン追加" Height="250" Width="350">
+    <StackPanel Margin="{StaticResource DefaultMargin}">
+        <TextBlock Text="ライン名" FontWeight="Bold"/>
+        <TextBox x:Name="LineNameTextBox" Margin="0,0,0,10"/>
+
+        <TextBlock Text="担当者" FontWeight="Bold"/>
+        <TextBox x:Name="ManagerTextBox" Margin="0,0,0,10"/>
+
+        <TextBlock Text="稼働状況" FontWeight="Bold"/>
+        <ComboBox x:Name="StatusComboBox" Margin="0,0,0,10"/>
+
+        <Button Content="追加" Click="AddButton_Click"
+                    Style="{StaticResource PrimaryButton}"/>
+    </StackPanel>
+
+</Window>
