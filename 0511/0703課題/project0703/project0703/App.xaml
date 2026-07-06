@@ -8,6 +8,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/AreaKeys.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <local:BoolToScheduleConverter x:Key="BoolToScheduleConverter"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

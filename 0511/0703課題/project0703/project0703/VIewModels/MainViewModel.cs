@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Project0703.Models;
+using Project0703.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -35,6 +36,7 @@ namespace Project0703.ViewModels
         public MainViewModel()
         {
             FilteredLines = new ObservableCollection<ProductionLine>(_allLines);
+            ProcessLines = new ObservableCollection<ManagementLine>(_allProcesses);
         }
 
         private void UpdateFilter()
@@ -56,5 +58,16 @@ namespace Project0703.ViewModels
             FilteredLines.Add(line);
 
         }
+
+        private List<ManagementLine> _allProcesses = new List<ManagementLine>()
+        {
+            new ManagementLine { Id = 1, Category = "半導体A", ProductionStage ="完了", IsOnSchedule = true },
+            new ManagementLine { Id = 2, Category = "半導体B", ProductionStage = "中断", IsOnSchedule = false },
+            new ManagementLine { Id = 3, Category = "半導体C", ProductionStage = "作業中", IsOnSchedule = true },
+            new ManagementLine { Id = 4, Category = "半導体D", ProductionStage = "未着手", IsOnSchedule = false },
+        };
+
+        public ObservableCollection<ManagementLine> ProcessLines { get; set; }
+
     }
 }

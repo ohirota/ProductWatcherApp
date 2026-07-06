@@ -92,9 +92,11 @@
     <Compile Include="AddLineWindow.xaml.cs">
       <DependentUpon>AddLineWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BoolToScheduleConverter.cs" />
     <Compile Include="DetailWindow.xaml.cs">
       <DependentUpon>DetailWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\ManagementLine.cs" />
     <Compile Include="VIewModels\MainViewModel.cs" />
     <Page Include="AddLineWindow.xaml">
       <SubType>Designer</SubType>

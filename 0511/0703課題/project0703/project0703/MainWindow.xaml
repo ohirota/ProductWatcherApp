@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project0703"
         mc:Ignorable="d"
-        Title="製造ライン管理" Height="400" Width="600">
+        Title="製造ライン管理" Height="800" Width="1200">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -13,8 +13,13 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
         <!-- ヘッダー -->
-        <Border Grid.Row="0"
+        <Border Grid.Row="0" Grid.ColumnSpan="2"
         Background="{StaticResource PrimaryColor}"
         Padding="{StaticResource DefaultMargin}">
             <DockPanel LastChildFill="False">
@@ -35,13 +40,15 @@
 
 
         <!-- フィルター用ドロップダウン　-->
-        <ComboBox Grid.Row="1"
+        <ComboBox Grid.Row="1" Grid.ColumnSpan="2"
+                  Width="200px"
+                  HorizontalAlignment="Left"
                   Margin="{StaticResource DefaultMargin}"
                   ItemsSource="{Binding StatusList}"
                   SelectedItem="{Binding SelectedStatus}"/>
 
         <!-- 一覧表示 -->
-        <DataGrid Grid.Row="2"
+        <DataGrid Grid.Row="2" Grid.Column="0"
                   ColumnHeaderStyle="{StaticResource DataGridHeaderStyle}"
                   Margin="{StaticResource DefaultMargin}"
                   FontSize="{StaticResource DefaultFontSize}"
@@ -72,7 +79,21 @@
             </DataGrid.RowStyle>
         </DataGrid>
 
+        <DataGrid Grid.Row="2" Grid.Column="1"
+          ColumnHeaderStyle="{StaticResource DataGridHeaderStyle}"
+          Margin="{StaticResource DefaultMargin}"
+          FontSize="{StaticResource DefaultFontSize}"
+          ItemsSource="{Binding ProcessLines}"
+          AutoGenerateColumns="False"
+          MouseDoubleClick="DataGrid_MouseDoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="100"/>
+                <DataGridTextColumn Header="半導体種類" Binding="{Binding Category}" Width="150"/>
+                <DataGridTextColumn Header="製造段階" Binding="{Binding ProductionStage}" Width="150"/>
+                <DataGridTextColumn Header="オンスケ" Binding="{Binding IsOnSchedule, Converter={StaticResource BoolToScheduleConverter}}" Width="*"/>
+            </DataGrid.Columns>
 
+        </DataGrid>
 
     </Grid>
 </Window>

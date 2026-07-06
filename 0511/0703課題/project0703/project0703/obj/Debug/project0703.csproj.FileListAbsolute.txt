@@ -41,3 +41,4 @@ C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0.F
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703.exe
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703.pdb
 C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\project0703.exe.config
+C:\AttendanceSystem\0511\0703課題\project0703\project0703\obj\Debug\GeneratedInternalTypeHelper.g.cs
