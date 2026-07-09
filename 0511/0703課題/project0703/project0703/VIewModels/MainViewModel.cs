@@ -20,6 +20,8 @@ namespace Project0703.ViewModels
         };
 
         public ObservableCollection<ProductionLine> FilteredLines { get; set; }
+
+        public Dictionary<string, int> ManagerCounts { get; set; } = new Dictionary<string, int>();
         public Array StatusList => Enum.GetValues(typeof(LineStatus));
 
         private LineStatus? _selectedStatus;
@@ -37,7 +39,42 @@ namespace Project0703.ViewModels
         {
             FilteredLines = new ObservableCollection<ProductionLine>(_allLines);
             ProcessLines = new ObservableCollection<ManagementLine>(_allProcesses);
+            UpdateFilter();
         }
+
+        private int activeCount;
+        public int ActiveCount
+        {
+            get => activeCount;
+            set
+            {
+                activeCount = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private int stoppedCount;
+        public int StoppedCount
+        {
+            get => stoppedCount;
+            set
+            {
+                stoppedCount = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private int maintenanceCount;
+        public int MaintenanceCount
+        {
+            get => maintenanceCount;
+            set
+            {
+                maintenanceCount = value;
+                OnPropertyChanged();
+            }
+        }
+
 
         private void UpdateFilter()
         {
@@ -50,6 +87,21 @@ namespace Project0703.ViewModels
             {
                 FilteredLines.Add(line);
             }
+
+            ActiveCount = FilteredLines.Count(l => l.Status == LineStatus.稼働中);
+            StoppedCount = FilteredLines.Count(l => l.Status == LineStatus.停止);
+            MaintenanceCount = FilteredLines.Count(l => l.Status == LineStatus.メンテナンス);
+
+            ManagerCounts.Clear();
+
+            var managers = FilteredLines.Select(l => l.Manager).Distinct();
+
+            foreach (var manager in managers)
+            {
+               int count = FilteredLines.Count(l =>l.Manager == manager);
+                ManagerCounts[manager] = count;
+            }
+
         }
 
         public void AddLine(ProductionLine line)

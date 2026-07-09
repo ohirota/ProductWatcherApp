@@ -10,6 +10,8 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -47,8 +49,37 @@
                   ItemsSource="{Binding StatusList}"
                   SelectedItem="{Binding SelectedStatus}"/>
 
+
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="{StaticResource DefaultMargin}">
+            <TextBlock Text="{Binding ActiveCount,StringFormat='稼働中: {0}件' }" Margin="0,0,20,0"/>
+            <TextBlock Text="{Binding StoppedCount,StringFormat='停止: {0}件' }" Margin="0,0,20,0"/>
+            <TextBlock Text="{Binding MaintenanceCount,StringFormat='メンテナンス: {0}件' }"/>
+
+        </StackPanel>
+
+        <ItemsControl Grid.Row="3" Grid.ColumnSpan="2" 
+              ItemsSource="{Binding ManagerCounts}"
+              Margin="{StaticResource DefaultMargin}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Key}" Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding Value, StringFormat=': {0}件  '}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+
+
+
         <!-- 一覧表示 -->
-        <DataGrid Grid.Row="2" Grid.Column="0"
+        <DataGrid Grid.Row="4" Grid.Column="0"
                   ColumnHeaderStyle="{StaticResource DataGridHeaderStyle}"
                   Margin="{StaticResource DefaultMargin}"
                   FontSize="{StaticResource DefaultFontSize}"
@@ -79,7 +110,7 @@
             </DataGrid.RowStyle>
         </DataGrid>
 
-        <DataGrid Grid.Row="2" Grid.Column="1"
+        <DataGrid Grid.Row="4" Grid.Column="1"
           ColumnHeaderStyle="{StaticResource DataGridHeaderStyle}"
           Margin="{StaticResource DefaultMargin}"
           FontSize="{StaticResource DefaultFontSize}"
