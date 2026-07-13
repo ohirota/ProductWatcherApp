@@ -10,7 +10,15 @@ namespace Project0703.Models
     {
         public int Id { get; set; }
         public string Category { get; set; }
-        public string ProductionStage { get; set; }
+        public StageStatus ProductionStage { get; set; }
         public bool IsOnSchedule { get; set; }
     }
+}
+
+public enum StageStatus
+{
+    完了,
+    中断,
+    作業中,
+    未着手
 }

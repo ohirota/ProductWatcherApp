@@ -1,11 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Project0703.Models;
-using Project0703.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Windows.Shapes;
 
 namespace Project0703.ViewModels
 {
@@ -113,10 +111,10 @@ namespace Project0703.ViewModels
 
         private List<ManagementLine> _allProcesses = new List<ManagementLine>()
         {
-            new ManagementLine { Id = 1, Category = "半導体A", ProductionStage ="完了", IsOnSchedule = true },
-            new ManagementLine { Id = 2, Category = "半導体B", ProductionStage = "中断", IsOnSchedule = false },
-            new ManagementLine { Id = 3, Category = "半導体C", ProductionStage = "作業中", IsOnSchedule = true },
-            new ManagementLine { Id = 4, Category = "半導体D", ProductionStage = "未着手", IsOnSchedule = false },
+            new ManagementLine { Id = 1, Category = "半導体A", ProductionStage = StageStatus.完了, IsOnSchedule = true },
+            new ManagementLine { Id = 2, Category = "半導体B", ProductionStage = StageStatus.中断, IsOnSchedule = false },
+            new ManagementLine { Id = 3, Category = "半導体C", ProductionStage = StageStatus.作業中, IsOnSchedule = true },
+            new ManagementLine { Id = 4, Category = "半導体D", ProductionStage = StageStatus.未着手, IsOnSchedule = false },
         };
 
         public ObservableCollection<ManagementLine> ProcessLines { get; set; }
